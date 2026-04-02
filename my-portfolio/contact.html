@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Brilliant Atyang — Computing student at JKUAT">
+  <title>Contact | Brilliant Atyang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Brilliant Atyang</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact-section">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>If you are interested in a collaboration, have an internship opportunity, or just want to discuss strategy games and Python, feel free to reach out!</p>
+        
+        <form class="contact-form" action="#" method="POST" novalidate>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="yourname@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject / Department Interest</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject</option>
+              <option value="frontend">Front-End Development Internship</option>
+              <option value="backend">Backend / API Design Internship</option>
+              <option value="qa">Quality Assurance (QA) / Testing</option>
+              <option value="collab">General Collaboration</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="5" 
+                      placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div style="margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem;">
+            <h3>Other Contact Methods</h3>
+            <p><strong>Email:</strong> atyangbrilliant2024@students.jkuat.ac.ke</p>
+            <p><strong>Phone:</strong> +254 759860826</p>
+            <p><strong>Location:</strong> Busia / Juja, Kenya</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Brilliant Atyang — AGA222-0151/2024, Dept. of Computing</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
